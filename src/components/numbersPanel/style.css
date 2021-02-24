@@ -1,0 +1,16 @@
+.numbers_panel {
+  display: flex;
+  margin-top: 10px;
+}
+.numbers_panel .number {
+  width: calc(100% / 10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin-right: calc((100% / 10) / 8);
+  border-radius: 10px;
+}
+.numbers_panel .number:nth-last-child(1) {
+  margin-right: 0;
+}

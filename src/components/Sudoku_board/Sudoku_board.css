@@ -1,0 +1,8 @@
+.sudoku_board {
+  width: 315px;
+
+  height: 315px;
+
+  display: flex;
+  flex-wrap: wrap;
+}

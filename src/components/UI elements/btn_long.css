@@ -1,0 +1,12 @@
+.btn_long {
+  width: 150px;
+  border: none;
+  padding: 10px 0;
+  border-radius: 12px;
+  background: linear-gradient(0deg, #303038, #26252d);
+  margin-bottom: 20px;
+}
+.btn_long:active,
+.btn_long:focus {
+  outline: none;
+}

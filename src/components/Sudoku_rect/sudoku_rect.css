@@ -1,0 +1,16 @@
+.sudoku-rect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.sudoku-rect:nth-child(-n + 9):nth-child(n + 0) {
+  border-top: 1px solid black;
+}
+.leftBorder {
+  border-left: 1px solid black;
+}

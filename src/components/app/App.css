@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+* {
+  transition: background-color 150ms;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+[data-active="true"] {
+  filter: opacity(1);
+}
+[data-active="false"] {
+  filter: opacity(0.5);
+}
+.app {
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main";
+  height: 100vh;
+  width: 100vw;
+  padding: 10px 5px;
+}
+:root {
+  /*---------------------------------Dark mode variables*/
+  /*dark mode colors*/
+  --dark-main-bg: #2c2b35;
+  --dark-elements-bg: linear-gradient(135deg, #2f2e3a, #24232b);
+  --dark-text-color-main: #f55353;
+  --dark-shadow-darker: #16151a;
+  --dark-shadow-lighter: #424150;
+  --dark-shadow: 3px 3px 6px var(--dark-shadow-darker),
+    -2px -1px 6px var(--dark-shadow-lighter);
+  /*----------------------------------------------Light mode vars*/
+  --light-main-bg: #fff;
+}
+header {
+  grid-area: "header";
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+}
+main {
+  grid-area: "main";
+}
+/*dark mode classes*/
+.dark_main-bg {
+  background-color: var(--dark-main-bg);
+}
+.dark_elements-bg {
+  background: var(--dark-elements-bg);
+}
+.dark_text-color-main {
+  color: var(--dark-text-color-main);
+}
+.dark_shadow {
+  box-shadow: var(--dark-shadow);
+}
+/*light mode classes*/
+.light-main-bg {
+  background-color: var(--light-main-bg);
+}
+.btn_rected {
+  border-radius: 15px;
+  box-shadow: var(--dark-shadow);
+}
